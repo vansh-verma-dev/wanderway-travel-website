@@ -5,6 +5,7 @@ menuBtn.addEventListener("click", () => {
 navLinks.classList.toggle("active");
 });
 
+ 
 //auto scroll cards
  const container = document.querySelector(".travel-cards");
 
@@ -25,7 +26,6 @@ scrollAmount = 0;
 // card rander in conatiner
 
 const destinations = [
-
 {
 id:1,
 name:"Paris, France",
@@ -115,3 +115,6 @@ Cardcontainer.innerHTML += `
 `;
 
 });
+
+
+ 

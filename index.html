@@ -29,7 +29,6 @@
           <li><a href="#Contact">Contact</a></li>
         </ul>
 
-       
         <button id="BookBtn">Book Now</button>
       </nav>
     </header>
@@ -46,6 +45,7 @@
           <br />
           travel packages
         </p>
+
         <div class="hero-details">
           <div class="details">
             <i class="fa-solid fa-location-dot"></i>
@@ -59,9 +59,9 @@
             <i class="fa-solid fa-user-group"></i>
             <input type="number" placeholder="Guests" />
           </div>
-          <div class="details">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" />
+          <div class="details searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>  
+            <button>search</button>
           </div>
         </div>
       </div>
@@ -110,19 +110,26 @@
         </div>
       </div>
     </section>
+    <!-- ===================================================
+    ===============Destination-Section======================
+    ====================================================== -->
     <section class="Destinations-section" id="Destination">
       <h1>Popular Destinations</h1>
       <p>Explore our handpicked destinations around the world</p>
-      <div class="destination-contain"></div>
+      <div class="destination-contain">
+        <!-- ==========add card in javaScript====== -->
+      </div>
     </section>
 
+    <!-- ===================================================
+    ===============Package-Section======================
+    ====================================================== -->
     <section class="Package-section" id="Packages">
       <h1>Travel Packages</h1>
       <p class="package-subheading">
         Choose the perfect package that suits your travel style and budget
       </p>
       <div class="package-contain">
-
         <div class="package-card">
           <h2>Weekend Getaway</h2>
           <p style="text-align: left">⭐4.7</p>
@@ -147,7 +154,7 @@
           <button>Book Package</button>
         </div>
         <!-- ---card-2-- -->
- <div class="package-card Card2" >
+        <div class="package-card Card2">
           <h2>Premium Escape</h2>
           <p style="text-align: left">⭐4.9</p>
           <p class="price">1,200Rs</p>
@@ -161,23 +168,18 @@
 
           <ul>
             <li><i class="fa-solid fa-check"></i> Business class flights</li>
-            <li>
-              <i class="fa-solid fa-check"></i>5-star luxury hotel
-            </li>
+            <li><i class="fa-solid fa-check"></i>5-star luxury hotel</li>
             <li><i class="fa-solid fa-check"></i>All meals included</li>
             <li><i class="fa-solid fa-check"></i>Private guided tours</li>
             <li><i class="fa-solid fa-check"></i>Spa treatment</li>
-             <li><i class="fa-solid fa-check"></i>Travel insurance</li>
-                <li><i class="fa-solid fa-check"></i>Airport & local transfers
-</li>
+            <li><i class="fa-solid fa-check"></i>Travel insurance</li>
+            <li><i class="fa-solid fa-check"></i>Airport & local transfers</li>
           </ul>
           <button>Book Package</button>
-          <div class="add">
-            Most Popular
-          </div>
+          <div class="add">Most Popular</div>
         </div>
         <!-- ---card-3---- -->
-   <div class="package-card">
+        <div class="package-card">
           <h2>Family Adventure</h2>
           <p style="text-align: left">⭐4.8</p>
           <p class="price">900Rs</p>
@@ -191,31 +193,102 @@
 
           <ul>
             <li><i class="fa-solid fa-check"></i> Round-trip flights</li>
-            <li>
-              <i class="fa-solid fa-check"></i>Family suite accommodation
-            </li>
+            <li><i class="fa-solid fa-check"></i>Family suite accommodation</li>
             <li><i class="fa-solid fa-check"></i>All meals & snacks</li>
             <li><i class="fa-solid fa-check"></i> Theme park tickets</li>
             <li><i class="fa-solid fa-check"></i>Adventure activities</li>
-                <li><i class="fa-solid fa-check"></i>Professional photography
-</li>
+            <li><i class="fa-solid fa-check"></i>Professional photography</li>
           </ul>
           <button>Book Package</button>
         </div>
-
       </div>
-
     </section>
 
+    <!-- ===================================================
+    ===============Feature-Section======================
+    ====================================================== -->
     <section class="Choose-section">
       <h1>Why Choose WanderWay?</h1>
-      <p>We're committed to providing you with unforgettable travel experiences</p>
+      <p>
+        We're committed to providing you with unforgettable travel experiences
+      </p>
 
       <div class="choose-conatin">
-        
+        <!-- =========add feature in JavaScript Using Object======== -->
+      </div>
+      <div class="Show-count">
+        <div class="count">
+          <h1><span class="counter" data-target="10"></span>M+</h1>
+          <p>Happy Travelers</p>
+        </div>
+
+        <div class="count">
+          <h1><span class="counter" data-target="120"></span>+</h1>
+          <p>Countries</p>
+        </div>
+
+        <div class="count">
+          <h1><span class="counter" data-target="50"></span>K+</h1>
+          <p>Destinations</p>
+        </div>
+
+        <div class="count">
+          <h1>4.8★</h1>
+          <p>Average Rating</p>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <ul>
+        <h2>WanderLux</h2>
+        <li>
+          Your trusted partner for unforgettable travel experiences around the
+          world.
+        </li>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </ul>
+
+      <ul>
+        <h2>Quick Links</h2>
+        <li><a href="#AboutUs">About Us"</a></li>
+        <li><a href="About Us">Destinations</a></li>
+        <li><a href="About Us">Travel Packages</a></li>
+        <li><a href="About Us">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <ul>
+        <h2>Support</h2>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="">Cancellation Policy</a></li>
+        <li><a href="">FAQs</a></li>
+      </ul>
+      <ul>
+        <h2>Contact Us</h2>
+        <li>123 Travel Street, Suite 100 New York, NY 10001</li>
+        <li>+91 XXXXXXXXX</li>
+        <li>@gmail.com</li>
+      </ul>
+    </footer>
+    <div class="footer">
+    <ul>
+      <p>© 2026 WanderLux. All rights reserved.</p>
+    </ul>
+    <ul class="ul">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Sitemap</a></li>
+    </ul>
+    </div>
   </body>
-  <script src="JS/main.js"></script>
-  <script src="JS/chooise-card.js"></script>
+ <script src="JS/main.js"></script>
+ <script src="JS/chooise-card.js"></script>
 </html>
