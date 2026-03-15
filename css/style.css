@@ -2,7 +2,7 @@
   --primary-color: #0ea5e9;
   --primary-dark: #155dfc;
 
-  --accent-color: #f59e0b;
+  --accent-color: #dddddc;
   --text-dark: #0f172a;
 
   --text-light: #ffffff;
@@ -264,7 +264,7 @@ nav button {
 }
 
 /* =======================================
-===========Travel-Section===============
+===========Destination-Section===============
 ======================================= */
 
 .Destinations-section {
@@ -377,6 +377,105 @@ nav button {
   border-radius: 6px;
   font-size: 18px;
 }
+/* =======================================
+===========package-Section===============
+======================================= */
+
+.Package-section{
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  background-color: var(--accent-color);
+}
+.Package-section h1{
+   text-align: center;
+   font-size: 40px;
+}
+.package-subheading{
+  text-align: center;
+ font-size: 19px;
+  font-weight: 300;
+}
+.package-contain{
+  margin-top: 20px;
+  height: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-content: center;
+}
+.package-card{
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  text-align: left;
+  height:500px;
+  background-color: var(--section-bg);
+  width: 400px;box-shadow: 0 10px 15px -10px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.package-card:hover{
+  box-shadow: 0 10px 19px rgba(128, 128, 128, 0.459);
+}
+
+.package-card h2{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.price{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+  font-size:40px;
+  font-weight: 700;
+  text-align: left;
+}
+.time-group{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.package-contain ul li{
+  list-style: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.package-card button{
+  position: absolute;
+  bottom: 10px;
+
+  font-size: 20px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 90%;
+  border: none;
+  background-color: var(--primary-dark);
+  color: var(--white);
+}
+.Card2{
+border: 4px solid var(--primary-dark);
+}
+.Card2 button{
+  background-color: var(--text-dark);
+}
+.add{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-bottom-left-radius: 10px;
+}
 
 /* =======================================
 ===========Mobile Responsive===============
@@ -462,6 +561,16 @@ nav button {
   }
   .destination-card {
     width: 200px;
+  }
+  .package-contain {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .Package-section{
+    background-color: var(--section-bg);
+  }
+  .package-card{
+    width: 350px;
   }
 }
 
