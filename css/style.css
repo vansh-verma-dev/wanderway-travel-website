@@ -14,16 +14,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background-color: var(--white);
+  background-color: var(--accent-color);
   width: 100%;
-  height: auto;
-  overflow: hidden;
 }
 /* ==========================================
 ============NavBar Style==================
 ========================================== */
+
+header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 nav {
   width: 100%;
   height: auto;
@@ -33,10 +38,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: transparent;
   background-color: var(--white);
-  position: sticky;
-
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 1000;
 }
 nav .logo {
   display: flex;
@@ -79,100 +86,186 @@ nav button {
   width: 120px;
   border-radius: 5px;
 }
+
 /* =======================================
 ===========.Hero-Section===============
 ======================================= */
-.Hero-Section{
-height:100vh;
-width:100%;
 
-display:flex;
-justify-content:center;
-align-items:center;
+.Hero-Section {
+  margin-top: 60px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+
+  background: url("https://i.pinimg.com/1200x/0d/6a/66/0d6a66da9e9fb01a584805a568347cd5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+ 
+.Hero-Section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  color: #e2e8f0;
+  margin-bottom: 35px;
+}
+
+.hero-details {
+  display: flex;
+  gap: 15px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(255, 255, 255, 0.795);
+  padding: 12px 15px;
+
+  border-radius: 6px;
+  width: 200px;
+}
+
+.details i {
+  color: var(--primary-color);
+}
+
+.details input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+/* =======================================
+===========Travel-Section===============
+======================================= */
+
+.travel-section{
+padding:80px 20px;
+background:var(--section-bg);
 text-align:center;
-
-position:relative;
-
-background:url("https://i.pinimg.com/1200x/0d/6a/66/0d6a66da9e9fb01a584805a568347cd5.jpg");
-background-size:cover;
-background-position:center;
 }
 
-/* Dark overlay */
-
-.Hero-Section::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,0.55);
+.travel-content h1{
+font-size:40px;
+color:var(--text-dark);
 }
 
-/* Content */
-
-.hero-content{
-position:relative;
-z-index:2;
-padding:20px;
+.travel-content p{
+margin-top:10px;
+color:#64748b;
+font-size:18px;
 }
 
-.hero-content h1{
-color:white;
-font-size:65px;
-font-weight:700;
+.travel-cards{
+margin-top:50px;
+padding: 30px;
+display: flex;
+gap:25px;
+overflow-x: scroll;
+}
+.travel-cards::-webkit-scrollbar{
+    display: none;
+}
+.travel-card{
+   min-width: 300px;
+background:white;
+padding:30px 20px;
+border-radius:12px;
+text-decoration:none;
+color:var(--text-dark);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.travel-card:hover{
+
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+.travel-card:hover .card-icon{
+transform:translateY(-6px);
+}
+
+.card-icon{
+font-size:40px;
 margin-bottom:15px;
 }
 
-.hero-content p{
+.travel-card h3{
 font-size:22px;
-color:#e2e8f0;
-margin-bottom:35px;
+margin-bottom:10px;
 }
 
-/* Search Box */
-
-.hero-details{
-display:flex;
-gap:15px;
-
-padding:15px 20px;
-
-background:rgba(255,255,255,0.12);
-backdrop-filter:blur(10px);
-
-border-radius:10px;
-
-flex-wrap:wrap;
-justify-content:center;
-}
-
-/* Input Box */
-
-.details{
-display:flex;
-align-items:center;
-gap:8px;
-
-background:white;
-padding:12px 15px;
-
-border-radius:6px;
-width:200px;
-}
-
-.details i{
-color:var(--primary-color);
-}
-
-.details input{
-border:none;
-outline:none;
-width:100%;
+.travel-card p{
 font-size:15px;
+color:#64748b;
+}
+@media(max-width:768px){
+
+.travel-content h1{
+font-size:30px;
+}
+
+.travel-cards{
+grid-template-columns:1fr;
+ 
+}
+}
+/* =======================================
+===========Travel-Section===============
+======================================= */
+
+.Destinations-section{
+    height: 90vh;
+    width: 100%;
+    background-color:var(--section-bg);
+}
+.Destinations-section h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--text-dark);
+}
+.Destinations-section p{
+    text-align: center;
+    font-size: 20px;
 }
 /* =======================================
 ===========Mobile Responsive===============
@@ -203,38 +296,43 @@ font-size:15px;
     display: none;
   }
 
-/* ---------hero-section------ */
-  .hero-content h1{
-font-size:48px;
+  /* ---------hero-section------ */
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    width: 260px;
+  }
+
+  .travel-card-contain{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+  }
 }
 
-.hero-content p{
-font-size:18px;
-}
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 34px;
+  }
 
-.hero-details{
-flex-direction:column;
-align-items:center;
-}
+  .hero-content p {
+    font-size: 16px;
+  }
 
-.details{
-width:260px;
-}
-
-}
-
-@media(max-width:500px){
-
-.hero-content h1{
-font-size:34px;
-}
-
-.hero-content p{
-font-size:16px;
-}
-
-.Hero-Section{
-padding:20px;
-}
-
+  .Hero-Section {
+    padding: 20px;
+  }
 }
