@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --primary-color: #0ea5e9;
+  --primary-dark: #155dfc;
+
+  --accent-color: #dddddc;
+  --text-dark: #0f172a;
+
+  --text-light: #ffffff;
+  --white: #ffffff;
+  --section-bg: #f8fafc;
+}
+body{
+    background-color: var(--section-bg);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+section p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ==========================================
+============NavBar Style==================
+========================================== */
+
+header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--text-dark);
+  transition: all 0.3s ease-in;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: #0f172a;
+  display: block;
+}
+
+nav button {
+  background-color: var(--primary-dark);
+  border: none;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+}
