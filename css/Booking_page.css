@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-:root {
+ :root {
   --primary-color: #0ea5e9;
   --primary-dark: #155dfc;
 
@@ -13,10 +9,12 @@
   --white: #ffffff;
   --section-bg: #f8fafc;
 }
-body{
-    background-color: var(--section-bg);
-}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -109,4 +107,76 @@ nav button {
   height: 40px;
   width: 120px;
   border-radius: 5px;
+}
+
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: url("https://i.pinimg.com/1200x/f0/9b/ee/f09bee69ba298b858d05c4766237c182.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-section h1{
+    font-size: 90px;
+    color: white;
+}
+.hero-section p{
+    font-size: 25px;
+    color: white;
+}
+.Main-setails{
+    background-color: var(--section-bg);
+    margin-top: 10vh;
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:  repeat(2,1fr);
+}
+.trip-info-section{
+    padding: 20px;
+    padding-left: 50px;
+    width: 70vw;
+    height: auto;
+    
+}
+.trip-info-section h1{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+.trip-info-section p {
+    text-align: left;
+    font-size: 18px;
+    
+}
+.Included{
+    background-color: #88d9ff;
+    padding: 30px;
+    border-radius: 20px;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+}
+ul li{
+    font-size: 20px;
+    margin: 10px;
+    color: var(--text-dark);
+}
+.trip-book-card{
+    box-shadow: 19px 10px 39px 12px gray;
+    margin: 10px;
+    height: 700px;
+    width: 25vw;
+    background-color:var(--white);
+    border-radius: 20px;
 }

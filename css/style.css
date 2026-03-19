@@ -371,12 +371,15 @@ nav button {
   color: #f59e0b;
 }
 
-.card-group a {
+.card-group  button {
+  background-color: transparent;
+  border: none;
   text-decoration: none;
   color: var(--primary-dark);
   font-weight: 600;
   border-radius: 6px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* =======================================
@@ -417,6 +420,7 @@ nav button {
 .package-card:hover {
   box-shadow: 0 10px 19px rgba(128, 128, 128, 0.459);
 }
+ 
 
 .package-card h2 {
   font-size: 30px;
@@ -456,6 +460,11 @@ nav button {
   border: none;
   background-color: var(--primary-dark);
   color: var(--white);
+  transition: all 0.3s ease;
+}
+.package-card button:hover{
+padding-bottom: 10px;
+cursor: pointer;
 }
 
 .Card2 {
@@ -1136,3 +1145,4 @@ grid-row:span 1;
 }
 
 }
+
