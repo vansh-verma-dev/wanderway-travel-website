@@ -45,32 +45,31 @@ const destinations = [
   },
 ];
 
-// ✅ URL se ID nikaalo
+ 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// ✅ Matching data find karo
+ 
 const selectedPlace = destinations.find((item) => item.id == id);
 
-// ✅ Container select karo
+ 
 const container = document.querySelector(".details-container");
 
-// ❌ Agar data nahi mila to error message
+ 
 if (!selectedPlace) {
   container.innerHTML = "<h1>Data not found ❌</h1>";
 }
 
-// ✅ Highlights list
+ 
 const highlightsHTML = selectedPlace?.Highlights
   ?.map(item => `<li>${item}</li>`)
   .join("");
-
-// ✅ Activities list
+ 
 const activitiesHTML = selectedPlace?.Activities
   ?.map(item => `<li>${item}</li>`)
   .join("");
 
-// ✅ Final render
+ 
 if (selectedPlace && container) {
   container.innerHTML = `
     <section class="hero-section">
