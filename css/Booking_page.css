@@ -108,75 +108,129 @@ nav button {
   width: 120px;
   border-radius: 5px;
 }
+.Hero-Section{
+  height: 100vh;
+  width: 100%;
+  position: relative;
 
-.hero-section{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://i.pinimg.com/1200x/99/a5/f2/99a5f20fdee57e12010f055840eda500.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    background: url("https://i.pinimg.com/1200x/f0/9b/ee/f09bee69ba298b858d05c4766237c182.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.hero-section h1{
-    font-size: 90px;
-    color: white;
+
+ 
+
+.Hero-Section h1{
+  color: white;
+  font-size: 110px;
+  text-align: left;
+  margin-left: 40px;
 }
-.hero-section p{
-    font-size: 25px;
-    color: white;
+.Hero-Section p{
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 25px;
+  margin-bottom: 40px;
 }
-.Main-setails{
-    background-color: var(--section-bg);
-    margin-top: 10vh;
-    width: 100%;
-    height: auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns:  repeat(2,1fr);
+#root{
+  height: auto;
+  width: 100%;
+  background-color: var(--section-bg);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
-.trip-info-section{
-    padding: 20px;
-    padding-left: 50px;
-    width: 70vw;
-    height: auto;
-    
+.trip-details{
+  height: 100%;
+  width: 65vw;
+  padding: 30px;
+  padding-left: 50px;
 }
-.trip-info-section h1{
-    margin-top: 10px;
-    text-align: left;
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: var(--text-dark);
+.trip-details ul{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  list-style: none;
 }
-.trip-info-section p {
-    text-align: left;
-    font-size: 18px;
-    
+.trip-details h1{
+  margin-top: 10px;
+  color: rgb(31, 30, 30);
+  font-size: 32px;
 }
-.Included{
-    background-color: #88d9ff;
-    padding: 30px;
-    border-radius: 20px;
+.trip-details p {
+  line-height: 1.6;
+  line-height: 1.6;
+  margin-top: 10px;
+  font-size: 20px;
 }
-ul {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    list-style: none;
+.trip-details ul li {
+  font-size: 19px;
+  margin: 10px;
 }
-ul li{
-    font-size: 20px;
-    margin: 10px;
-    color: var(--text-dark);
+ 
+.Highlights{
+  background-color: rgb(162, 255, 162);
+padding: 10px;
+height: 40px;
+width: 40px;
+border-radius: 50%;
 }
-.trip-book-card{
-    box-shadow: 19px 10px 39px 12px gray;
-    margin: 10px;
-    height: 700px;
-    width: 25vw;
-    background-color:var(--white);
-    border-radius: 20px;
+.PopularActivities li{
+  width: 260px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.PopularActivities li:hover{
+    border: 2px solid rgb(146, 197, 245);
+}
+.included-card{
+  margin-top: 10px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(152, 188, 255, 0.726);
+}
+.booking-card{
+background-color: var(--white);
+height: 90%;
+width: 30vw;
+border-radius: 20px;
+box-shadow: 10px 40px   39px -8px gray;
+margin: 10px;
+padding: 10px;
+cursor: pointer;
+}
+.head{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.head p{
+  color: gray;
+}
+.head h1{
+  margin:5px;
+  color: #155dfc;
+  font-size: 40px;
+}
+.booking-card label{
+  font-size: 18px;
+}
+.booking-card input{
+  width: 95%;
+  height: 30px;
+  margin-top:5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
 }

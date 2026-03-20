@@ -1,33 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/Booking_page.css" />
-    <title>Booking</title>
-  </head>
-  <body>
-       <header>
-      <!-- ===================Navbar================ -->
-      <nav>
-        <div class="logo">
-          <img src="" alt="" />
-          <p>WanderLux</p>
-        </div>
 
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Destination">Destination</a></li>
-          <li><a href="#Packages">Packages</a></li>
-          <li><a href="#Gallery">Gallery</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  <link rel="stylesheet" href="css/Booking_page.css" />
+  <title>Booking</title>
+</head>
 
-        <button id="BookBtn">Book Now</button>
-      </nav>
-    </header>
-  <div id="root"></div>
-  </body>
+<body>
+  <header>
+    <!-- ===================Navbar================ -->
+    <nav>
+      <div class="logo">
+        <img src="" alt="" />
+        <p>WanderLux</p>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Destination">Destination</a></li>
+        <li><a href="#Packages">Packages</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+
+      <button id="BookBtn">Book Now</button>
+    </nav>
+  </header>
+  <section class="Hero-Section">
+
+  </section>
+  <div id="root">
+    <div class="trip-details">
+     
+    </div>
+    <div class="booking-card">
+      <div class="head">
+        <p>starting from</p>
+        <h1></i>1299Rs</h1>
+        <p>per person</p>
+      </div>
+      <label>Start Date</label>
+      <input type="date" id="starting-date">
+          <label>End Date</label>
+      <input type="date" id="End-date">
+          <label>Number of Guest</label>
+      <input type="number"  id="GuestNum">
+      <div class="foot">
+        <h2>Total Price</h2> 
+        <p>25999</p>
+        <p>For 01 Guest(s)</p>
+      </div>
+      <button>Book This Trip</button>
+      <p>Free cancellation up to 24 hours before departure</p>
+    </div>
+  </div>
+</body>
 <script type="module" src="JS/booking_Page.js"></script>
+
 </html>

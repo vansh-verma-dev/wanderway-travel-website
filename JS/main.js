@@ -36,5 +36,5 @@ function goToPage(id) {
   window.location.href = `booking_page.html?id=${id}`;
 }
 
-// global scope me daalna जरूरी (module me ho isliye)
+ 
 window.goToPage = goToPage;
