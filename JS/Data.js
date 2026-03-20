@@ -35,7 +35,23 @@ export const destinations = [
     image:
       "https://i.pinimg.com/736x/92/b1/79/92b1791393625bbb8f4d16d9a64c7873.jpg",
 
-    button: "2",
+ 
+        Destination:
+      "The Maldives is a tropical paradise consisting of 26 atolls with pristine white-sand beaches, crystal-clear turquoise waters, and vibrant coral reefs. It's the perfect destination for honeymooners and beach lovers seeking ultimate relaxation.",
+    Highlights: [
+      "Overwater villa stay",
+      "Snorkeling in coral reefs",
+      "Sunset dolphin cruise",
+      "Island hopping tour",
+      "Private beach dining",
+    ],
+    Activities: [
+      "Scuba diving",
+      "Jet skiing",
+      "Kayaking",
+      "Sunset fishing",
+      "Underwater restaurant experience",
+    ],
   },
 
   {
@@ -74,6 +90,21 @@ export const destinations = [
     reviews: "2.5k",
     image:
       "https://i.pinimg.com/1200x/f8/03/da/f803dadd95596c8a94048bf6b08ae03b.jpg",
+          Destination:
+      "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern's Zytglogge clock tower.",
+    Highlights: [
+      "Jungfraujoch - Top of Europe",
+      "Interlaken adventure sports",
+      "Lake Geneva cruise",
+      "Zermatt and Matterhorn",
+      "Swiss chocolate factory tour",
+    ],
+    Activities: [
+      "Skiing and snowboarding",
+      "Paragliding",
+       "Hiking trails",
+      "Cable car rides",
+    ],
   },
 
   {
@@ -85,6 +116,21 @@ export const destinations = [
     reviews: "1.8k",
     image:
       "https://i.pinimg.com/1200x/99/a5/f2/99a5f20fdee57e12010f055840eda500.jpg",
+          Destination:
+      "Tokyo, Japan's bustling capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods.",
+    Highlights: [
+      "Tokyo Skytree and Shibuya Crossing",
+      "Mount Fuji day trip",
+      "Tsukiji Fish Market",
+      "Traditional tea ceremony",
+       "Akihabara electronics district",
+    ],
+    Activities: [
+      "Sushi making class",
+      "Sumo wrestling show",
+      "Robot restaurant",
+      "Karaoke night",
+    ],
   },
 
   {
@@ -96,6 +142,21 @@ export const destinations = [
     reviews: "3.1k",
     image:
       "https://i.pinimg.com/1200x/12/e0/c6/12e0c6c92da1b4d4c1dec82fed0e41d5.jpg",
+          Destination:
+      "Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape. The whitewashed, cubiform houses of its 2 principal towns, Fira and Oia, cling to cliffs above an underwater caldera.",
+    Highlights: [
+      "Oia sunset viewing",
+      "Red Beach and Black Beach",
+      "Wine tasting tours",
+      "Akrotiri archaeological site",
+      "Caldera cruise",
+    ],
+    Activities: [
+      "Wine tasting in local cafes",
+      "Photography tour",
+      "French cooking class",
+      "Night illumination tour",
+    ],
   },
 ];
 
