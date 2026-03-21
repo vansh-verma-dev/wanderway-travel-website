@@ -22,15 +22,14 @@
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="../index.html">Destination</a></li>
-        <li><a href="#Packages">Packages</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="">Destination</a></li>
+             <li><a href="#Booking">Booking</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
 
-      <button id="BookBtn">Book Now</button>
+      <button id="">Cart</button>
     </nav>
   </header>
   <section class="Hero-Section">
@@ -38,25 +37,30 @@
   </section>
       <!-- ================Main section================ -->
   <div id="root">
-    <div class="trip-details"> </div>
+
+   
+    <div class="trip-details" id="About"> </div>
    <!-- ================booking-Card================ -->
-    <div class="booking-card">
+    <div class="booking-card" id="Booking">
+       <div class="alert-input">
+      pelese fill all details
+    </div>
       <div class="head">
         <p>starting from</p>
         <h1></i>1299Rs</h1>
         <p>per person</p>
       </div>
       <label> <i class="fa-regular fa-calendar"></i>Start Date</label>
-      <input type="date" id="starting-date">
+      <input type="date" id="starting-date" required>
           <label> <i class="fa-regular fa-calendar"></i>End Date</label>
-      <input type="date" id="End-date">
+      <input type="date" id="End-date" required>
           <label><i class="fa-solid fa-user-group"></i> Number of Guest</label>
-      <input type="number"  id="GuestNum">
+      <input type="number"  id="GuestNum" required>
       <div class="foot">
         <h2>Total Price</h2> 
-        <p>25999</p>
+        <p id="total"></p>
       </div>
-      <button>Book This Trip</button>
+      <button id="addbookingbtn">Book This Trip</button>
       <p>Free cancellation up to 24 hours before <br> departure</p>
     </div>
   </div>
@@ -113,5 +117,6 @@
     </div>
 </body>
 <script type="module" src="JS/booking_Page.js"></script>
+<script src="./JS/bookinh_Cart.js"></script>
 
 </html>
