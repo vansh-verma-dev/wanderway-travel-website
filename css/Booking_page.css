@@ -110,8 +110,19 @@ nav button {
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+  position: relative;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+nav button span{
+  position: absolute;
+  top: -10px;
+  right: -16px;
+  opacity: 0;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
 }
 nav button:hover {
   transform: scale(1.1);
@@ -234,6 +245,8 @@ nav button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  gap: 5px;
 }
 .booking-card:hover {
   box-shadow: 15px 30px 39px -8px gray;
