@@ -12,6 +12,7 @@
   </head>
 
   <body>
+ 
     <header>
       <!-- ===================Navbar================ -->
       <nav>
@@ -30,13 +31,16 @@
         </ul>
 
         <button id="BookBtn"> My Trips  <i class="fa-solid fa-route"></i></button>
+       
       </nav>
     </header>
  
     <!-- ======================================================
     ====================Hero-Section======================
     ====================================================== -->
-
+ 
+ 
+   
     <section class="Hero-Section" id="Home">
       <div class="hero-content">
         <h1>Discover Your Next Adventure</h1>
@@ -123,11 +127,16 @@
     ===============Package-Section======================
     ====================================================== -->
     <section class="Package-section" id="Packages">
+ 
       <h1>Travel Packages</h1>
       <p class="package-subheading">
         Choose the perfect package that suits your travel style and budget
       </p>
       <div class="package-contain">
+        
+        <div class="buy-box">
+          <button id="closebtn">X</button>
+        </div>
         <div class="package-card">
           <h2>Weekend Getaway</h2>
           <p style="text-align: left">⭐4.7</p>
@@ -149,9 +158,9 @@
             <li><i class="fa-solid fa-check"></i> City tour</li>
             <li><i class="fa-solid fa-check"></i>Airport transfers</li>
           </ul>
-          <a href="Payment_Page.html">
-           <button>Book Package</button>
-         </a>
+          
+           <button id="packgbtn" >Book Package</button>
+         
         </div>
         <!-- ---card-2-- -->
         <div class="package-card Card2">
@@ -480,7 +489,7 @@
         <li><a href="#">Sitemap</a></li>
       </ul>
     </div>
-    
+    </section>
   </body>
   <script type="module" src="JS/main.js"></script>
  

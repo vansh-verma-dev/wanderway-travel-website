@@ -1,47 +1,49 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/payment.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Payment</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <h1>WanderLux</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Check Packages</a></li>
-        </ul>
+      <h1>WanderLux</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Check Packages</a></li>
+      </ul>
     </nav>
     <div class="step-verify">
-        <div class="step">
-            <span class="icon"><i class="fa-solid fa-check"></i></span>
-            <p>Your selection</p>
-            <span class="line"></span>
-        </div>
+      <div class="step">
+        <span class="icon"><i class="fa-solid fa-check"></i></span>
+        <p>Your selection</p>
+        <span class="line"></span>
+      </div>
 
-        <div class="step">
-            <span class="icon-2">02</span>
-            <p>Your details</p>
-            <span class="line"></span>
-        </div>
+      <div class="step">
+        <span class="icon-2">02</span>
+        <p>Your details</p>
+        <span class="line"></span>
+      </div>
 
-        <div class="step">
-            <span class="icon-2">03</span>
-            <p>Buy Package</p>
-        </div>
+      <div class="step">
+        <span class="icon-2">03</span>
+        <p>Buy Package</p>
+      </div>
     </div>
 
     <section class="Payment-section">
-        <div class="package-section">.</div>
+      <div class="package-section">.</div>
 
-        <div class="user-details">
-            
-            <div class="heading">
+      <div class="user-details">
+        <section class="user-form">
+        <div class="heading">
                 <i class="fa-regular fa-user"></i>
                 <p>
                     Sign in to book with your saved details or register to manage your
@@ -49,7 +51,7 @@
                 </p>
             </div>
 
-            <div class="form">
+        <div class="form">
                 <h2>Enter your details</h2>
                 <div class="heading heading2">
                     <p>Almost done! Just fill in the * required info</p>
@@ -111,10 +113,15 @@
                         <p>Please write your requests in English or Hindi.(optional)</p>
                         <textarea></textarea>
                 </form>
-                <button>Next Final Details <i class="fa-solid fa-chevron-right"></i></button>
+                <button id="Nextbtn">Next Final Details <i class="fa-solid fa-chevron-right"></i></button>
             </div>
-        </div>
-    </section>
-</body>
+</section>
+           
+     
 
+   
+      </div>
+    </section>
+  </body>
+  <script src="JS/Payment.js"></script>
 </html>

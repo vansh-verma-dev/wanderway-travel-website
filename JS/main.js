@@ -38,3 +38,21 @@ function goToPage(id) {
 
  
 window.goToPage = goToPage;
+ 
+
+ let buybox = document.querySelector('.buy-box'); 
+let packgbtn = document.getElementById('packgbtn');
+let closebtn = document.getElementById('closebtn');
+closebtn.addEventListener('click',()=>{
+   buybox.style.display = "none";
+})
+
+packgbtn.addEventListener('click',()=>{
+  buybox.style.display = "block";
+  buybox.style.width = "50vw"
+})
+
+ 
+ 
+
+ 

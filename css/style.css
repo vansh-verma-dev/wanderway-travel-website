@@ -22,7 +22,8 @@ html {
 
 body {
   background-color: var(--white);
-  width: 100%;
+  width: 100%; 
+ 
 }
 
 section h1 {
@@ -43,6 +44,7 @@ header {
   width: 100%;
   height: auto;
   overflow: hidden;
+ 
 }
 
 nav {
@@ -113,6 +115,7 @@ nav button:hover{
   transform: scale(1.1);
 }
 
+ 
 /* =======================================
 ===========.Hero-Section===============
 ======================================= */
@@ -397,8 +400,9 @@ nav button:hover{
   width: 100%;
   background-color: var(--accent-color);
 }
-
+ 
 .package-contain {
+    position: relative;
   margin-top: 20px;
   height: auto;
   padding: 30px;
@@ -406,8 +410,31 @@ nav button:hover{
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: center;
+  transition: all 0.5s ease;
 }
+.buy-box{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 10px;
+  height: 80vh;
 
+  background-color:white;
+  border-radius: 10px;
+  z-index: 2;
+}
+#closebtn{
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  color: red;
+  border: none;
+
+  font-size: 30px;
+  font-weight: 800;
+  background-color: transparent;
+}
 .package-card {
   overflow: hidden;
   position: relative;

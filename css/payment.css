@@ -175,3 +175,82 @@ form textarea {
 .user-details button:hover{
     background: linear-gradient(120deg, rgb(16, 16, 155), rgb(0, 102, 255)); 
 }
+.pay-hrading{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+}
+.pay-hrading h1{
+  color: rgb(31, 30, 30);
+  font-size: 25px;
+}
+.pay-hrading p{
+  color: gray;
+}
+.pay-hrading img{
+  height: 50px;
+}
+.pay-hrading i{
+  font-size: 30px;
+  color: gray;
+}
+.pay-hrading span{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.payment-details{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.payment-details h1{
+  font-size: 25px;
+    color: rgb(31, 30, 30);
+}
+.UPI-Card{
+  margin-top: 10px;
+}
+.UPI-Card h2{
+  font-size: 20px;
+  color: rgb(46, 46, 46);
+}
+.scan-details{
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.scan-details img{
+  height: 150px;
+}
+.all-UPI{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+}
+.all-UPI ul{
+  display: flex;
+  gap: 20px;
+ 
+  font-size: 25px;
+}
+.all-UPI img{
+  height: 40px;
+}
+.condition{
+  padding: 20px;
+}
+.condition p{
+  margin-top: 6px;
+}
+.condition p:nth-child(2){
+   color: gray;
+}
+ 
