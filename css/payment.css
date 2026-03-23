@@ -254,3 +254,44 @@ form textarea {
    color: gray;
 }
  
+
+
+.Cart-section{
+  height: auto;
+  padding: 40px;
+  width: 100%;
+  background-color: rgb(24, 47, 255);
+}
+.cart-deshboard{
+  color: black;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+}
+.dashboard-card{
+  background-color: white;
+  width: 300px;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+box-shadow: 10px 10px 40px -10px gray ;
+cursor: pointer;
+}
+.Trip_Collection{
+width: 100%;
+height: auto;
+padding: 40px;
+}
+.trip_bill{
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px -20px;
+}
+.trip_details{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
