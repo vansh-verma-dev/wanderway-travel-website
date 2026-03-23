@@ -10,12 +10,14 @@ const selected = destinations.find((item) => item.id == id);
 const HeroSection = document.querySelector(".Hero-Section");
 const tripdetails = document.querySelector(".trip-details");
 
+let booking_destination = document.querySelector(".booking_destination");
+
 if (!selected) {
   HeroSection.innerHTML = "<h2>Not Found</h2>";
 } else {
   HeroSection.innerHTML = `
      <section class="hero-content">
-      <h1>${selected.name}</h1>
+      <h1 class"Tname">${selected.name}</h1>
       <p> ⭐ ${selected.rating}<span>( ${selected.reviews} riviews )</span></p>
     </section>
   `;
@@ -24,7 +26,7 @@ if (!selected) {
       <p>${selected.Destination}</p>
       <h1>Tour Highlights</h1>
       <ul> 
-        ${selected.Highlights.map(item => `<li> <i class="fa-solid fa-check  Highlights "></i> ${item}</li>`).join("")}
+        ${selected.Highlights.map((item) => `<li> <i class="fa-solid fa-check  Highlights "></i> ${item}</li>`).join("")}
       </ul>
       <h1>What's Included</h1>
       <div class="included-card">
@@ -39,7 +41,64 @@ if (!selected) {
       </div>
       <h1>Popular Activities</h1>
       <ul class ="PopularActivities" >
-       ${selected.Activities.map(item => `<li>${item}</li>`).join("")}
+       ${selected.Activities.map((item) => `<li>${item}</li>`).join("")}
       </ul>
 `;
+  booking_destination.innerHTML = selected.name;
 }
+
+let starDate = document.getElementById("starting-date");
+let EndDate = document.getElementById("End-date");
+let GuestNum = document.getElementById("GuestNum");
+let total = document.getElementById("total");
+let Msg = document.querySelector(".alert-input");
+let tripName = document.querySelector("booking_destination");
+let BookingBtn = document.getElementById("addbookingbtn");
+let cartvalue = document.getElementById("cartvalue");
+let totalTripPrice = document.getElementById("totalTripPrice").innerText;
+
+let GuestNumInput = document.getElementById("GuestNum");
+ 
+//Update Price for input value
+let myparice = "1299";
+GuestNumInput.addEventListener("input", () => {
+  let totalTrip = document.getElementById("totalTripPrice");
+  let newPrice = myparice * GuestNumInput.value;
+  totalTrip.innerHTML = newPrice;
+});
+
+
+function ShowMsg() {
+  Msg.style.backgroundcolor = "red";
+  Msg.style.color = "red";
+  Msg.style.opacity = "1";
+  total.innerHTML = "pelese filled All value";
+}
+// nav cart btn value
+let count = 0;
+BookingBtn.addEventListener("click", () => {
+  let starDateValue = starDate.value;
+  let EndDateValue = starDate.value;
+  let GuestNumValue = GuestNum.value;
+
+  console.log(totalTripPrice);
+  if (!starDateValue || !EndDateValue || !GuestNumValue) {
+    ShowMsg();
+  } else {
+
+    count++;
+    cartvalue.innerHTML = count;
+
+    let Utrip = {
+     
+      startDate: starDateValue,
+      EndDate: EndDateValue,
+      GuestNum: GuestNumValue,
+    };
+
+    console.log(Utrip);
+    localStorage.setItem("TripDetails", JSON.stringify(Utrip));
+  }
+
+  return;
+});

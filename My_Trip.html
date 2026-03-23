@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="css/payment.css">
     <title>My_Trip</title>
 
 </head>
-<body>
-        <nav >
-      <h1>WanderLux</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Check Packages</a></li>
-      </ul>
-    </nav>
 
-    <section class="Cart-section">
-        <h1>My Bookings</h1>
-        <p>Manage your upcoming trips and travel plans</p>
-    </section>
-       <div class="cart-deshboard">
+<body>
+    <section id="trip">
+        <nav>
+            <h1>WanderLux</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Check Packages</a></li>
+            </ul>
+        </nav>
+
+        <section class="Cart-section">
+            <h1>My Bookings</h1>
+            <p>Manage your upcoming trips and travel plans</p>
+        </section>
+        <div class="cart-deshboard">
             <div class="dashboard-card">
                 <p>Total Booking</p>
                 <h1 id="booking_Count">0</h1>
             </div>
 
-             <div class="dashboard-card">
+            <div class="dashboard-card">
                 <p>Active Trips</p>
                 <h1 id="Active_Trips">0</h1>
             </div>
 
-             <div class="dashboard-card">
+            <div class="dashboard-card">
                 <p> Total Amount</p>
                 <h1>RS <span id="Total_Amount">0</span></h1>
             </div>
         </div>
 
         <section class="Trip_Collection">
-            <div class="trip_bill">
-<h1 id="destination_name">Dubai</h1>
-<div class="trip_details">
-    <div class="trip_details_card">
-        <p>Travel Dates</p>
-        <p>23/03/2026  - 31/03/2026</p>
-    </div>
-
-       <div class="trip_details_card">
-        <p>Guests</p>
-        <h2>2 People</h2>
-     </div>
-
-     <div class="trip_details_card">
-        <p>Total Price</p>
-        <h2>$1799</h2>
-     </div>
-</div>
-            </div>
+          
         </section>
+
+    </section>
 </body>
+<script src="JS/bookinh_Cart.js"></script>
 </html>

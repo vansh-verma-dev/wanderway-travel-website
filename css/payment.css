@@ -254,7 +254,11 @@ form textarea {
    color: gray;
 }
  
-
+#trip{
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
 
 .Cart-section{
   height: auto;
@@ -294,4 +298,40 @@ padding: 40px;
 .trip_details{
   display: grid;
   grid-template-columns: repeat(4,1fr);
+}
+.trip_btn_group{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.trip_btn_group button{
+  height: 35px;
+  width: 220px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.confrmBtn{
+  font-size: 15px;
+    border: none;
+    color: white;
+  background-color: green;
+}
+.confrmBtn i{
+  font-size: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.delete_btn{
+  font-size: 16px;
+  color: red;
+  border: 2px solid red;
+}
+ 
+.RemoveBtn{
+  border: none;
+  background-color: transparent;
 }

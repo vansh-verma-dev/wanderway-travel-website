@@ -1,59 +1,36 @@
-let BookingBtn = document.getElementById("addbookingbtn");
-let alertInput = document.querySelector(".alert-input");
-let cartvalue = document.getElementById("cartvalue");
+let Button = document.getElementById('getData');
+let Trip_Collection = document.querySelector('.Trip_Collection');
+ 
+  let data = localStorage.getItem("TripDetails");
+  let dataget = JSON.parse(data);
+  console.log(dataget);
+ 
 
-let startDate = document.getElementById("starting-date");
-let EndDate = document.getElementById("End-date");
-let GuestNum = document.getElementById("GuestNum");
-let totalRs = document.getElementById("total");
+Trip_Collection.innerHTML += `
+  <div class="trip_bill">
+                <h1 id="destination_name">Dubai</h1>
+                <div class="trip_details">
+                    <div class="trip_details_card">
+                        <p>Travel Dates</p>
+                        <p>${dataget.startDate} - ${dataget.EndDate}</p>
+                    </div>
 
+                    <div class="trip_details_card">
+                        <p>Guests</p>
+                        <h2>${dataget.GuestNum}People</h2>
+                    </div>
 
-// Calaculation Trip Price For per Perna
-let price = "1299";
-GuestNum.addEventListener("input", () => {
+                    <div class="trip_details_card">
+                        <p>Total Price</p>
+                        <h2>$1799</h2>
+                    </div>
 
-  let NumValue = GuestNum.value;
-  let totalPrice = price * NumValue;
-  totalRs.innerHTML = totalPrice;
-});
+                    <div class="trip_btn_group">
+                        <button class="confrmBtn"> <i class="fa-solid fa-check "></i> conferma Booking</button>
+                        <button class="delete_btn"><i class="fa-regular fa-circle-xmark"></i> Cancel Trip</button>
+                        <button class="RemoveBtn"> <i class="fa-solid fa-trash"></i>Remove</button>
+                    </div>
+                </div>
+            </div>
+`
 
-// Show Warnning meassage
-function warnning() {
-  alertInput.style.opacity = "1";
-  alertInput.style.color = "black";
-  alertInput.style.backgroundColor = "rgba(255, 0, 0, 0.521)";
-}
-// show succes masg
-function succesmsg() {
-  alertInput.innerHTML = "Trip Book Succesfull";
-  alertInput.style.opacity = "1";
-  alertInput.style.color = "white";
-  alertInput.style.backgroundColor = "green";
-}
-
-let cartNum = "0";
-
-// details condition
-BookingBtn.addEventListener("click", () => {
-  if (startDate.value === "" || EndDate.value === "" || GuestNum.value === "") {
-    alertInput.innerHTML = ` <i class="fa-solid fa-circle-exclamation"></i> pelase Enter a full details`;
-    //show msg
-    warnning();
-// hide msg after 2sec
-    setTimeout(() => {
-      alertInput.style.opacity = "0";
-    }, 2000);
-
-  } else {
-
-    // show succes msg
-    succesmsg();
-    cartvalue.style.opacity = "1";
-    cartNum++;
-    cartvalue.innerHTML = cartNum;
-    setTimeout(() => {
-      alertInput.style.opacity = "0";
-    }, 2000);
-    return;
-  }
-});

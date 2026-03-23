@@ -99,7 +99,9 @@ nav ul li a:hover {
   background: #0f172a;
   display: block;
 }
-
+nav a{
+  text-decoration: none;
+}
 nav button {
   display: flex;
   align-items: center;
