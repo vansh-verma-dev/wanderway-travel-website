@@ -52,21 +52,24 @@ let EndDate = document.getElementById("End-date");
 let GuestNum = document.getElementById("GuestNum");
 let total = document.getElementById("total");
 let Msg = document.querySelector(".alert-input");
-let tripName = document.querySelector("booking_destination");
+
 let BookingBtn = document.getElementById("addbookingbtn");
 let cartvalue = document.getElementById("cartvalue");
-let totalTripPrice = document.getElementById("totalTripPrice").innerText;
 
 let GuestNumInput = document.getElementById("GuestNum");
- 
+let bookingName = booking_destination.innerHTML;
+
 //Update Price for input value
-let myparice = "1299";
+let newPrice = 0;  
+
+let myparice = 1299;
+
 GuestNumInput.addEventListener("input", () => {
-  let totalTrip = document.getElementById("totalTripPrice");
-  let newPrice = myparice * GuestNumInput.value;
+  let totalTrip = document.querySelector(".Trip_Price");
+
+  newPrice = myparice * GuestNumInput.value;
   totalTrip.innerHTML = newPrice;
 });
-
 
 function ShowMsg() {
   Msg.style.backgroundcolor = "red";
@@ -77,6 +80,7 @@ function ShowMsg() {
 // nav cart btn value
 let count = 0;
 BookingBtn.addEventListener("click", () => {
+   
   let starDateValue = starDate.value;
   let EndDateValue = starDate.value;
   let GuestNumValue = GuestNum.value;
@@ -85,19 +89,28 @@ BookingBtn.addEventListener("click", () => {
   if (!starDateValue || !EndDateValue || !GuestNumValue) {
     ShowMsg();
   } else {
-
     count++;
     cartvalue.innerHTML = count;
 
     let Utrip = {
-     
+      bookingName: bookingName,
       startDate: starDateValue,
       EndDate: EndDateValue,
       GuestNum: GuestNumValue,
+      price: newPrice,
     };
 
-    console.log(Utrip);
-    localStorage.setItem("TripDetails", JSON.stringify(Utrip));
+    let trips = JSON.parse(localStorage.getItem("trips"));
+
+    if (trips === null) {
+      trips = [];
+    }
+
+    trips.push(Utrip); // ✅ FIXED
+
+    localStorage.setItem("trips", JSON.stringify(trips));
+
+    alert("Trip Added ✅");
   }
 
   return;

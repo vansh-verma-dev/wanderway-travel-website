@@ -58,3 +58,9 @@ Nextbtn.addEventListener('click',(e)=>{
             </section>
  `
 })
+
+let packageSection = document.querySelector('package-section');
+let two_PackgBtn = document.getElementById('packageBtn_1');
+two_PackgBtn.addEventListener('click',()=>{
+  alert('clcik');
+})
