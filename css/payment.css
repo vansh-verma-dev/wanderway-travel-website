@@ -7,32 +7,32 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-.payment-navbar{
+.payment-navbar {
   height: 10vh;
   width: 100vw;
   padding: 10px;
   display: flex;
   align-items: center;
-justify-content: space-around;
+  justify-content: space-around;
   background-color: white;
 }
-.nav-links{
+.nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
 }
- .nav-links li a{
-color: black;
-text-decoration: none;
-font-size: 18px;
- }
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
 
- .secure{
+.secure {
   color: green;
   font-weight: 400;
   font-size: 18px;
- }
- .login-btn{
+}
+.login-btn {
   margin-left: 20px;
   border-radius: 6px;
   border: none;
@@ -40,13 +40,13 @@ font-size: 18px;
   width: 90px;
   color: white;
   cursor: pointer;
-  background: linear-gradient(120deg, rgb(104, 104, 247),rgb(64, 64, 247));
+  background: linear-gradient(120deg, rgb(104, 104, 247), rgb(64, 64, 247));
   transition: all 0.3s ease;
- }
- .login-btn:hover{
+}
+.login-btn:hover {
   transform: scale(1.1);
-    background: linear-gradient(120deg, rgb(38, 38, 68),rgb(64, 64, 247));
- }
+  background: linear-gradient(120deg, rgb(38, 38, 68), rgb(64, 64, 247));
+}
 .step-verify {
   height: 10vh;
   width: 100vw;
@@ -70,11 +70,11 @@ font-size: 18px;
 .icon-2 {
   font-weight: 700;
   background-color: blue;
- color: white;
+  color: white;
   padding: 10px;
   border-radius: 50%;
 }
-.icon-3{
+.icon-3 {
   border: 3px solid gray;
   padding: 7px;
   border-radius: 50%;
@@ -181,9 +181,9 @@ form textarea {
 }
 
 .user-details button {
-    position: absolute;
-    right: 60px;
-    bottom: 50px;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
   height: 45px;
   width: auto;
   padding: 10px;
@@ -194,62 +194,62 @@ form textarea {
   cursor: pointer;
   border-radius: 5px;
 }
-.user-details button:hover{
-    background: linear-gradient(120deg, rgb(16, 16, 155), rgb(0, 102, 255)); 
+.user-details button:hover {
+  background: linear-gradient(120deg, rgb(16, 16, 155), rgb(0, 102, 255));
 }
-.pay-hrading{
+.pay-hrading {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 10px;
   padding-left: 20px;
 }
-.pay-hrading h1{
+.pay-hrading h1 {
   color: rgb(31, 30, 30);
   font-size: 25px;
 }
-.pay-hrading p{
+.pay-hrading p {
   color: gray;
 }
-.pay-hrading img{
+.pay-hrading img {
   height: 50px;
 }
-.pay-hrading i{
+.pay-hrading i {
   font-size: 30px;
   color: gray;
 }
-.pay-hrading span{
+.pay-hrading span {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.payment-details{
+.payment-details {
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid gray;
 }
-.payment-details h1{
+.payment-details h1 {
   font-size: 25px;
-    color: rgb(31, 30, 30);
+  color: rgb(31, 30, 30);
 }
-.UPI-Card{
+.UPI-Card {
   margin-top: 10px;
 }
-.UPI-Card h2{
+.UPI-Card h2 {
   font-size: 20px;
   color: rgb(46, 46, 46);
 }
-.scan-details{
+.scan-details {
   margin-top: 30px;
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: space-around;
 }
-.scan-details img{
+.scan-details img {
   height: 150px;
 }
-.all-UPI{
+.all-UPI {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -257,59 +257,63 @@ form textarea {
   border-top: 1px solid gray;
   padding-top: 10px;
 }
-.all-UPI ul{
+.all-UPI ul {
   display: flex;
   gap: 20px;
- 
+
   font-size: 25px;
 }
-.all-UPI img{
+.all-UPI img {
   height: 40px;
 }
-.condition{
+.condition {
   padding: 20px;
 }
-.condition p{
+.condition p {
   margin-top: 6px;
 }
-.condition p:nth-child(2){
-   color: gray;
+.condition p:nth-child(2) {
+  color: gray;
 }
- 
-#trip{
+
+#trip {
   width: 100vw;
   height: auto;
   overflow-x: hidden;
 }
 
-.Cart-section{
+.Cart-section {
   height: auto;
   padding: 40px;
   width: 100%;
   background-color: rgb(24, 47, 255);
 }
-.cart-deshboard{
+.cart-deshboard {
   color: black;
   padding: 30px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
-.dashboard-card{
+.dashboard-card {
   background-color: white;
   width: 300px;
   height: auto;
   padding: 30px;
   border-radius: 10px;
-box-shadow: 10px 10px 40px -10px gray ;
-cursor: pointer;
+  box-shadow: 10px 10px 40px -10px gray;
+  cursor: pointer;
 }
-.Trip_Collection{
-width: 100%;
-height: auto;
-padding: 40px;
+/* ===================================================
+    ===============.Trip_Collection  =====================
+    ====================================================== */
+.Trip_Collection {
+  width: 100%;
+  height: auto;
+  padding: 40px;
 }
-.trip_bill{
+
+.trip_bill {
   margin-top: 30px;
   margin-left: 30px;
   width: 90%;
@@ -319,15 +323,15 @@ padding: 40px;
   border-radius: 10px;
   box-shadow: 10px 10px 40px -20px;
 }
-.trip_details{
+.trip_details {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-.trip_btn_group{
+.trip_btn_group {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
-.trip_btn_group button{
+.trip_btn_group button {
   height: 35px;
   width: 220px;
   margin-top: 10px;
@@ -337,25 +341,25 @@ padding: 40px;
   justify-content: center;
   align-items: center;
 }
-.confrmBtn{
+.confrmBtn {
   font-size: 15px;
-    border: none;
-    color: white;
+  border: none;
+  color: white;
   background-color: green;
 }
-.confrmBtn i{
+.confrmBtn i {
   font-size: 10px;
   border: 3px solid white;
   border-radius: 50%;
   padding: 5px;
 }
-.delete_btn{
+.delete_btn {
   font-size: 16px;
   color: red;
   border: 2px solid red;
 }
- 
-.RemoveBtn{
+
+.RemoveBtn {
   border: none;
   background-color: transparent;
 }
@@ -392,11 +396,11 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: gray;
- 
+
   font-size: 18px;
   transition: all 0.3s ease;
 }
-footer h2{
+footer h2 {
   color: white;
 }
 
@@ -448,4 +452,69 @@ footer ul li a:hover {
 
 .footer ul li a {
   color: white;
+}
+
+@media (max-width: 400px) {
+  .payment-navbar ul {
+    display: none;
+  }
+  .secure {
+    display: none;
+  }
+  .Cart-section {
+    padding: 20px;
+  }
+  .cart-deshboard {
+    color: black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .dashboard-card {
+    padding: 10px;
+    width: 90px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .dashboard-card p {
+    color: gray;
+    font-size: 12px;
+  }
+  .dashboard-card h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .trip_details {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trip_details button {
+    width: 90%;
+  }
+  .trip_bill{
+    margin-left: 10px;
+    width: 80vw;
+  }
+  .trip_bill h1{
+    color: rgb(37, 37, 37);
+    margin-bottom: 20px;
+  }
+  .trip_bill h2{
+    color: rgb(17, 66, 2);
+  }
+  .trip_bill h2 span{
+    color: gray;
+  }
+    .pricetag h2{
+    color: blue;
+  }
+  .Trip_Collection{
+padding: 10px;
+  }
+  footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
 }

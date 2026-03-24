@@ -33,12 +33,12 @@ function showTrips() {
 
             <div class="trip_details_card">
                 <p>Guests</p>
-                <h2>${trip.GuestNum} People</h2>
+                <h2>${trip.GuestNum} <span>People</span></h2>
             </div>
 
-            <div class="trip_details_card">
+            <div class="trip_details_card pricetag">
                 <p>Total Price</p>
-                <h2>₹${trip.price || "N/A"}</h2>
+                <h2  >₹${trip.price || "N/A"}</h2>
             </div>
 
             <div class="trip_btn_group">

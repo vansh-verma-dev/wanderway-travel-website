@@ -25,7 +25,7 @@ if (!selected) {
  <h1>About This Destination</h1>
       <p>${selected.Destination}</p>
       <h1>Tour Highlights</h1>
-      <ul> 
+      <ul class="Highlights_font"> 
         ${selected.Highlights.map((item) => `<li> <i class="fa-solid fa-check  Highlights "></i> ${item}</li>`).join("")}
       </ul>
       <h1>What's Included</h1>
