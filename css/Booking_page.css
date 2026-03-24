@@ -420,6 +420,9 @@ footer ul li a:hover {
     font-size: 12px;
     margin: 10px;
   }
+  .trip-details ul li i{
+    margin-right: 10px;
+  }
   .booking-card {
     width: 95vw;
     margin-bottom: 40px;

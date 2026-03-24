@@ -88,7 +88,8 @@ body {
 .Payment-section {
   width: 100%;
   height: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: 20px;
   justify-content: center;
 }
@@ -514,6 +515,10 @@ footer ul li a:hover {
 padding: 10px;
   }
   footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .Payment-section{
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }

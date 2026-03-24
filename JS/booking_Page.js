@@ -106,11 +106,11 @@ BookingBtn.addEventListener("click", () => {
       trips = [];
     }
 
-    trips.push(Utrip); // ✅ FIXED
+    trips.push(Utrip);  
 
     localStorage.setItem("trips", JSON.stringify(trips));
 
-    alert("Trip Added ✅");
+    alert("Trip Added  ");
   }
 
   return;

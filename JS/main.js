@@ -19,7 +19,7 @@ destinations.forEach((place) => {
         ⭐ ${place.rating} 
         <span>(${place.reviews} reviews)</span>
       </h2>
-      <a href="#" onclick="goToPage(${place.id})" class= "linksize">  View More </a>
+      <a href="#" onclick="goToPage(${place.id})" class= "linksize"> <button> View More </button></a>
 
     </div>
 
