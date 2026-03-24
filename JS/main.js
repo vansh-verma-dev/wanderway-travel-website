@@ -33,7 +33,7 @@ destinations.forEach((place) => {
 
 // button click function
 function goToPage(id) {
-  window.location.href = `Booking_page.html?id=${id}`;
+  window.location.href = `Booking_Page.html?id=${id}`;
 }
 
  
