@@ -453,3 +453,38 @@ footer ul li a:hover {
 .booking_destination{
   opacity: 0;
 }
+.bottm_nav_section{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  height: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottm_nav_section a{
+  text-decoration: none;
+}
+.botm_nav{
+  font-size: 18px;
+  height: 40px;
+  width: 90px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.botm_nav p{
+  font-size: 14px;
+}
+ 
+
+@media (max-width: 480px) {
+  .bottm_nav_section{
+    height: 7vh;
+    display: flex;
+    background-color: white;
+  }
+}
