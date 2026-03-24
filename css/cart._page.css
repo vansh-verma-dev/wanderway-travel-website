@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(219, 219, 219);
+  overflow-x: hidden;
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.24);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav h1 {
+  font-size: 32px;
+  color: rgb(43, 42, 42);
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 19px;
+  color: black;
+}
+nav button {
+  background: linear-gradient(rgb(44, 44, 253), rgb(72, 72, 255));
+  color: white;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+}
+
+.Footer-Section{
+    padding-right: 20px;
+    width: 100vw;
+    overflow-x: hidden;
+    height: auto;
+    background-color: rgb(2, 2, 29);
+    padding: 40px;
+    margin-top: 20px;
+}
+.footer_head{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+}
+.footer_head h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.social-links{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.social-links i{
+    font-size: 20px;
+    color: gray;
+    background-color: rgb(65, 65, 65);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social-links i:hover {
+transform: scale(1.1);
+color: white;
+}
+.footer_head ul{
+    list-style: none;
+}
+.footer_head ul li{
+    color: white;
+    margin: 10px;
+}
+.footer_head ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+.footer_head ul li a:hover{
+padding-left: 10px;
+color: rgb(199, 199, 199);
+}
+
+ .foot{
+    padding-top: 20px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+ }
+@media (max-width: 430px) {
+  nav {
+    height: 7vh;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+.bottm_nav_section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  height: 10vh;
+  width: 100vw;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottm_nav_section a {
+  text-decoration: none;
+}
+.botm_nav {
+  font-size: 18px;
+  height: 40px;
+  width: 90px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.botm_nav p {
+  font-size: 14px;
+}
+
+.cart_content {
+  padding-top: 60px;
+  width: 100vw;
+  height: 60vh;
+  margin-top: 60px;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+.fa-cart-arrow-down {
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgba(126, 255, 190, 0.336);
+  padding: 30px;
+  border-radius: 50%;
+}
+.cart_content h2 {
+  font-size: 52px;
+  color: rgb(4, 4, 78);
+}
+.cart_content p {
+  color: gray;
+  font-size: 19px;
+}
+.cart_content button {
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.cart_content button:hover {
+  transform: scale(1.1);
+}
+.trip_collect {
+  padding-top: 50px;
+  margin-top: 20px;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.trip_bill {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin-left: 35px;
+  margin-top: 45px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 40px -10px gray;
+}
+.trip_bill h1 {
+  font-size: 30px;
+  color: rgb(48, 48, 48);
+}
+.trip_details {
+  display: flex;
+  justify-content: space-around;
+}
+.trip_btn_group {
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+}
+.trip_btn_group button {
+  height: 30px;
+  width: 120px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.trip_btn_group button:hover {
+  transform: scale(1.1);
+}
+.confrmBtn {
+  border: none;
+  color: white;
+  background-color: green;
+  border-radius: 6px;
+}
+.delete_btn {
+  color: red;
+  border: 2px solid red;
+  border-radius: 6px;
+}
+.RemoveBtn {
+  border: none;
+  color: black;
+  background-color: transparent;
+}
+.RemoveBtn:hover {
+  background-color: gray;
+  color: white;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .bottm_nav_section {
+    height: 7vh;
+    display: flex;
+    background-color: white;
+  }
+  .cart_content h2 {
+    font-size: 32px;
+    color: rgb(4, 4, 78);
+  }
+  .cart_content {
+    margin-top: 10px;
+  }
+  .cart_content p {
+    font-size: 12px;
+  }
+  .cart_content button {
+    width: 200px;
+    font-size: 15px;
+  }
+  .trip_bill {
+    margin-left: 5px;
+    width: 85vw;
+    margin-bottom: 10px;
+  }
+  .trip_bill h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .trip_btn_group {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 6px;
+  }
+  .trip_details_card p {
+    font-size: 14px;
+  }
+
+  .trip_btn_group button {
+    height: 30px;
+    font-size: 12px;
+    width: 180px;
+    transition: all 0.3s ease;
+  }
+  .confrmBtn {
+    width: 200px;
+  }
+  .trip_details_card h2 {
+    font-size: 12px;
+    text-align: right;
+  }
+  .footer_head{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-around;
+}
+
+.Footer-Section{
+ padding: 0;
+ padding-top: 40px;
+ padding-left: 10px;
+ padding-bottom: 30px;
+ margin-bottom: 6vh;
+}
+.footer_head ul{
+    margin-top: 20px;
+}
+ 
+}

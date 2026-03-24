@@ -1140,6 +1140,12 @@ footer ul li a:hover {
   br {
     display: none;
   }
+  .Offer-section{
+    display: none;
+  }
+  .offer-card{
+    width: 310px;
+  }
 }
 
 .travel-gallery {
@@ -1216,6 +1222,7 @@ footer ul li a:hover {
   left: 0;
   right: 0;
 
+
   display: none;
   height: 10vh;
   width: 100vw;
@@ -1229,7 +1236,7 @@ footer ul li a:hover {
 .botm_nav {
   font-size: 18px;
   height: 40px;
-  width: 90px;
+  width: 60px;
   color: black;
   align-items: center;
   justify-content: center;
@@ -1240,9 +1247,12 @@ footer ul li a:hover {
 }
 
 @media (max-width: 480px) {
+  
   .bottm_nav_section {
+    overflow-x: hidden;
+    width: 100vw;
     height: 7vh;
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
 }
