@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  height: 100vh;
+  display: flex;
+}
+
+/* MAIN */
+.auth-container {
+  display: flex;
+  width: 100%;
+}
+
+/* LEFT SIDE */
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, #0d6efd, #4dabf7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.auth-left h1 {
+  font-size: 40px;
+}
+
+.auth-left p {
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE */
+.auth-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #f5f7fb;
+}
+
+/* TOGGLE */
+.toggle-btns {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toggle-btns button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+}
+
+.toggle-btns .active {
+  background: #0d6efd;
+  color: white;
+}
+
+/* FORM */
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+/* INPUT */
+.input-box {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.input-box i {
+  margin-right: 10px;
+  color: #0d6efd;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    text-align: center;
+  }
+}

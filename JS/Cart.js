@@ -49,7 +49,7 @@ function showTrips() {
 
         </div>
           <div class="trip_btn_group">
-                <button class="confrmBtn">Confirm Booking</button>
+                <button class="confrmBtn" onClick="comfotmbtn()">Confirm Booking</button>
                 <button class="delete_btn">Cancel Trip</button>
                 <button class="RemoveBtn" onclick="deleteTrip(${index})">
                   Remove
@@ -61,6 +61,9 @@ function showTrips() {
 }
 }
 
+function comfotmbtn(){
+ window.location = "Payment_Page.html";
+}
 // delete function
 function deleteTrip(index) {
   let trips = JSON.parse(localStorage.getItem("trips")) || [];
@@ -72,5 +75,6 @@ function deleteTrip(index) {
   showTrips(); 
 }
 
+ 
 // page load  run
 window.onload = showTrips;
