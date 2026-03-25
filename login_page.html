@@ -1,11 +1,75 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderway | Login</title>
- </head>
- <body>
-    
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWay | Login</title>
+
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<section class="login_page">
+
+  <!-- LEFT IMAGE -->
+  <div class="image_side">
+    <img src="https://i.pinimg.com/736x/a1/40/c4/a140c4418534f069d357a43e35fd2843.jpg">
+    <div class="overlay">
+      <h2>Explore the World 🌍</h2>
+      <p>Plan your dream trips with WanderWay</p>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="page_details">
+
+    <h1>Welcome Back </h1>
+    <p class="subtitle">Login to continue your journey</p>
+
+    <form>
+
+      <div class="input-group">
+        <label>Email</label>
+        <div class="input-box">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <div class="input-box">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="Enter password" required>
+        </div>
+      </div>
+
+      <div class="btn_group">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button id="loginBtn">Login</button>
+
+      <div id="continue">
+        <span></span>
+        <p>or continue with</p>
+        <span></span>
+      </div>
+
+      <div class="social-btns">
+        <button><i class="fa-brands fa-google"></i> Google</button>
+        <button><i class="fa-brands fa-github"></i> GitHub</button>
+      </div>
+
+      <h2>Don't have an account? <a href="#">Sign up</a></h2>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
