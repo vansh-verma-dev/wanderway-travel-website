@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <title>Wanderway_Travel</title>
   </head>
 
@@ -41,7 +42,7 @@
  
  
    
-    <section class="Hero-Section" id="Home">
+    <section class="Hero-Section"  data-aos="fade-up" id="Home">
       <div class="hero-content">
         <h1>Discover Your Next Adventure</h1>
         <p>
@@ -73,7 +74,7 @@
     <!-- ===================================================
     ====================Hero-Section======================
     ====================================================== -->
-    <section class="travel-section">
+    <section class="travel-section" data-aos="fade-up">
       <div class="travel-content">
         <h1>Choose Your Travel Mode</h1>
         <p>
@@ -126,7 +127,7 @@
     <!-- ===================================================
     ===============Package-Section======================
     ====================================================== -->
-    <section class="Package-section" id="Packages">
+    <section class="Package-section" id="Packages" data-aos="fade-up">
  
       <h1>Travel Packages</h1>
       <p class="package-subheading">
@@ -220,7 +221,7 @@
     <!-- ===================================================
     ===============Feature-Section======================
     ====================================================== -->
-    <section class="Choose-section">
+    <section class="Choose-section" data-aos="fade-up">
       <h1>Why Choose WanderWay?</h1>
       <p>
         We're committed to providing you with unforgettable travel experiences
@@ -254,7 +255,7 @@
     <!-- ===================================================
     ===============Riview-Section======================
     ====================================================== -->
-    <section class="Riview-section">
+    <section class="Riview-section" data-aos="fade-up">
       <h1>What Our Travelers Say</h1>
       <p>Real experiences from real travelers who chose WanderLux</p>
 
@@ -358,7 +359,7 @@
          <!-- ===================================================
     ===============Gallery-Section======================
     ====================================================== -->
-    <section class="travel-gallery" id="Gallery">
+    <section class="travel-gallery" id="Gallery" data-aos="fade-up">
 
    <h1>Travel Gallery</h1>
    <p>Get inspired by stunning destinations from around the world</p>
@@ -395,7 +396,7 @@
      <!-- ===================================================
     ===============Offer-Section======================
     ====================================================== -->
-<section class="Offer-section">
+<section class="Offer-section" data-aos="fade-up">
   <h1>Special Offers & Deals</h1>
   <p>Exclusive limited-time offers to make your dream vacation more affordable</p>
   <div class="offer-contant">
@@ -442,7 +443,7 @@
     <!-- ===================================================
     ===============Footer-Section======================
     ====================================================== -->
-    <footer id="Contact">
+    <footer id="Contact" data-aos="fade-up">
       <ul>
         <h2>WanderLux</h2>
         <li>
@@ -528,4 +529,13 @@
   <script type="module" src="JS/main.js"></script>
  <script src="JS/chooise-card.js"></script>
  <script src="JS/Payment.js"></script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </html>
